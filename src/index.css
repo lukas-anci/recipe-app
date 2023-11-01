@@ -17,10 +17,10 @@
 
 
 body {
-  background-image: url('/public/images/backgroundImage.jpg'); /* Replace with the actual path to your image */
-  background-size: auto 100vh; /* Set height to match viewport height and maintain aspect ratio */
+  background-image: url('/images/backgroundImage.jpg'); 
+  background-size: auto 100vh; 
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Fixed background */
+  background-attachment: fixed; 
   background-position: top left;
 }
 
