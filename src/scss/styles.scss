@@ -1,1 +1,6 @@
-@import "bootstrap/scss/bootstrap";
+@import 'bootstrap/scss/bootstrap';
+
+.fixed-height {
+  height: 200px; /* Replace with your desired fixed height */
+  object-fit: cover; /* Maintain aspect ratio and cover the specified height */
+}

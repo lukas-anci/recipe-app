@@ -53,6 +53,7 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipeData }) => {
           <li
             key={index}
             className="list-group-item d-flex justify-content-between align-items-center"
+            onClick={() => handleCheckboxChange(index)}
           >
             {ingredient}
             <input
@@ -84,7 +85,9 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipeData }) => {
           <li key={index}>{instruction}</li>
         ))}
       </ol>
-      <button onClick={goBack}>Go Back</button>
+      <button onClick={goBack} type="button" className="btn btn-primary">
+        Go Back
+      </button>
     </div>
   );
 };
