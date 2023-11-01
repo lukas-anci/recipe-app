@@ -14,18 +14,38 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipeData }) => {
   const initialSelectedIngredients = storedIngredients
     ? JSON.parse(storedIngredients)
     : new Array(recipe?.ingredients.length).fill(false);
+  const initialSelectedSauceIngredients = storedIngredients
+    ? JSON.parse(storedIngredients)
+    : new Array(recipe?.sauce?.length || 0).fill(false);
+
   const [selectedIngredients, setSelectedIngredients] = useState(
     initialSelectedIngredients
   );
+
+  const [selectedSauceIngredients, setSelectedSauceIngredients] = useState(
+    initialSelectedSauceIngredients
+  );
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     localStorage.setItem(localStorageKey, JSON.stringify(selectedIngredients));
   }, [localStorageKey, selectedIngredients]);
 
-  const handleCheckboxChange = (index: number) => {
-    const updatedSelectedIngredients = [...selectedIngredients];
-    updatedSelectedIngredients[index] = !updatedSelectedIngredients[index];
-    setSelectedIngredients(updatedSelectedIngredients);
+  const handleCheckboxChange = (index: number, isSauceIngredient = false) => {
+    if (isSauceIngredient) {
+      const updatedSelectedSauceIngredients = [...selectedSauceIngredients];
+      updatedSelectedSauceIngredients[index] =
+        !updatedSelectedSauceIngredients[index];
+      setSelectedSauceIngredients(updatedSelectedSauceIngredients);
+    } else {
+      const updatedSelectedIngredients = [...selectedIngredients];
+      updatedSelectedIngredients[index] = !updatedSelectedIngredients[index];
+      setSelectedIngredients(updatedSelectedIngredients);
+    }
   };
 
   const history = useHistory();
@@ -37,6 +57,9 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipeData }) => {
   const handleClear = () => {
     localStorage.removeItem(localStorageKey);
     setSelectedIngredients(new Array(recipe?.ingredients.length).fill(false));
+    setSelectedSauceIngredients(
+      new Array(recipe?.sauce?.length || 0).fill(false)
+    );
   };
 
   if (!recipe) {
@@ -47,8 +70,7 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipeData }) => {
     <div
       className="card"
       style={{
-        // backgroundImage: 'url(/images/cardRecipe.jpg)',
-        backgroundImage: 'url(/images/cardRecipe1.avif)',
+        backgroundImage: 'url(/images/cardRecipe.avif)',
         backgroundPosition: 'center center',
       }}
     >
@@ -76,24 +98,42 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipeData }) => {
           </li>
         ))}
       </ul>
-      <button onClick={handleClear} className="btn btn-danger mt-4 mb-4">
-        Clear
-      </button>
+
       {recipe.sauce && (
         <>
-          <h3>Sauce ingredients:</h3>
-          <ul className="text-start">
+          <h3 className="mt-4 mb-4">Sauce ingredients:</h3>
+          <ul className="list-group text-start">
             {recipe.sauce.map((sauce, index) => (
-              <li key={index}>{sauce}</li>
+              <li
+                className="list-group-item d-flex justify-content-between align-items-center"
+                key={index}
+                onClick={() => handleCheckboxChange(index, true)}
+              >
+                {sauce}
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  checked={selectedSauceIngredients[index]}
+                  onChange={() => handleCheckboxChange(index, true)}
+                  style={{
+                    backgroundColor: selectedSauceIngredients[index]
+                      ? 'gray'
+                      : 'white',
+                    border: '1px solid gray',
+                  }}
+                />
+              </li>
             ))}
           </ul>
         </>
       )}
-
+      <button onClick={handleClear} className="btn btn-danger mt-4 mb-4">
+        Clear
+      </button>
       <h3>Instructions:</h3>
       <ol className="text-start">
         {recipe.instructions.map((instruction, index) => (
-          <li className=" fw-bold " key={index}>
+          <li className="fw-bold" key={index}>
             {instruction}
           </li>
         ))}

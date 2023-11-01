@@ -12,7 +12,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ id, name, imageUrl }) => {
     <div
       className="card"
       style={{
-        backgroundImage: 'url(/images/cardBackground1.jpg)',
+        backgroundImage: 'url(/images/cardBackground.jpg)',
         backgroundPosition: 'center center',
       }}
     >
@@ -23,11 +23,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ id, name, imageUrl }) => {
       />
       <div className="card-body">
         <h5 className="card-title fw-bold text-white">{name}</h5>
-        <Link
-          to={`/recipe/${id}`}
-          style={{ backgroundColor: 'gray', border: '1px solid gray' }}
-          className="btn btn-primary fw-bold"
-        >
+        <Link to={`/recipe/${id}`} className="btn btn-danger fw-bold">
           View Recipe
         </Link>
       </div>
