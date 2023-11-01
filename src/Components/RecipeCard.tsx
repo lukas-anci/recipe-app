@@ -12,8 +12,8 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ id, name, imageUrl }) => {
     <div
       className="card"
       style={{
-        backgroundImage: 'url(/images/cardBackground.jpg)',
-        backgroundSize: 'contain',
+        backgroundImage: 'url(/images/cardBackground1.jpg)',
+        backgroundPosition: 'center center',
       }}
     >
       <img

@@ -44,7 +44,14 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipeData }) => {
   }
 
   return (
-    <div className="card" style={{ width: '18rem' }}>
+    <div
+      className="card"
+      style={{
+        // backgroundImage: 'url(/images/cardRecipe.jpg)',
+        backgroundImage: 'url(/images/cardRecipe1.avif)',
+        backgroundPosition: 'center center',
+      }}
+    >
       <h2>{recipe.name}</h2>
       <img src={recipe?.imageUrl} alt={recipe.name} />
       <h3 className="mt-4 mb-4">Ingredients:</h3>
@@ -61,6 +68,10 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipeData }) => {
               className="form-check-input"
               checked={selectedIngredients[index]}
               onChange={() => handleCheckboxChange(index)}
+              style={{
+                backgroundColor: selectedIngredients[index] ? 'gray' : 'white',
+                border: '1px solid gray',
+              }}
             />
           </li>
         ))}
@@ -82,10 +93,17 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipeData }) => {
       <h3>Instructions:</h3>
       <ol className="text-start">
         {recipe.instructions.map((instruction, index) => (
-          <li key={index}>{instruction}</li>
+          <li className=" fw-bold " key={index}>
+            {instruction}
+          </li>
         ))}
       </ol>
-      <button onClick={goBack} type="button" className="btn btn-primary">
+      <button
+        onClick={goBack}
+        type="button"
+        style={{ backgroundColor: 'gray', border: '1px solid gray' }}
+        className="btn btn-primary fw-bold"
+      >
         Go Back
       </button>
     </div>
