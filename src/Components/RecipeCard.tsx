@@ -9,8 +9,8 @@ interface RecipeCardProps {
 
 const RecipeCard: React.FC<RecipeCardProps> = ({ id, name, imageUrl }) => {
   return (
-    <div className="card" style={{ width: '18rem' }}>
-      <img src={imageUrl} className="card-img-top" alt={name} />
+    <div className="card">
+      <img src={imageUrl} className="card-img-top img-fluid w-100" alt={name} />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
         <Link to={`/recipe/${id}`} className="btn btn-primary">

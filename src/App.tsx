@@ -42,10 +42,35 @@ function App() {
     },
     {
       id: '2',
-      name: 'Recipe 2',
-      imageUrl: '/images/plovas.jpg',
-      ingredients: ['Ingredient A', 'Ingredient B'],
-      instructions: ['Instruction A', 'Instruction B'],
+      name: 'Chicken noodles',
+      imageUrl: '/images/stir-fry.jpg',
+      ingredients: [
+        '200g noodles',
+        'oil to fry',
+        '400 g of chicken',
+        '3 garlic cloves',
+        '1 red paprika',
+        ' 200 g beans or brocolli',
+        '100 g shiitake mushrooms',
+        'sezame seeds',
+      ],
+      sauce: [
+        '4 spoons soy sauce',
+        '2 spoons oyster sauce',
+        '2 spoons sweet chilli sauce',
+        '2 spoons water',
+        '1 spoon sugar or honey',
+        '1 spoon rice vinegar',
+        '1 spoon sezame oil',
+      ],
+      instructions: [
+        'Cook the noodles as instructed',
+        'Mix everything in a bowl for the sauce',
+        'Preheat the oven and cook the chicken',
+        'Add garlic, ginger and cook for a minute',
+        'Add the cooked noodles and mix it',
+        'Serve with sezame seeds',
+      ],
     },
   ];
 
@@ -54,9 +79,9 @@ function App() {
       <div className="container">
         <Switch>
           <Route path="/" exact>
-            <div className="row">
+            <div className="row justify-content-center justify-content-md-center text-center">
               {recipeData.map((recipe) => (
-                <div key={recipe.id} className="col-md-4">
+                <div key={recipe.id} className="col-md-4 mb-4">
                   <RecipeCard
                     id={recipe.id}
                     name={recipe.name}
