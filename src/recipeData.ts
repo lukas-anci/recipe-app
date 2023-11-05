@@ -269,4 +269,26 @@ export const recipeData = [
       'Serve with french fries and/or sliced carrots and the sauce',
     ],
   },
+  {
+    id: '10',
+    name: 'Hangover Salad By Ema',
+    category: 'Salad',
+    imageUrl: '/images/pachmelSalad.jpg',
+    ingredients: [
+      'Iceberg Salad',
+      '1 boiled egg',
+      'Serrano ham',
+      '1 Avocado',
+      'Cherry tomaotes',
+      'Croutons',
+      'Balsamico creme',
+      'Parmesan cheese',
+    ],
+
+    instructions: [
+      'Combine all the ingredients nicely in a plate.',
+      'Grate parmesan cheese on top.',
+      'Add balsamico creme and olive oil.',
+    ],
+  },
 ];
