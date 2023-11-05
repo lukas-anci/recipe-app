@@ -14,7 +14,16 @@ function SearchBar({ onSearch }: SearchBarProps) {
   };
 
   return (
-    <div className="input-group mb-3">
+    <div
+      style={{
+        position: 'fixed',
+        top: '1vh',
+        width: '80%',
+        zIndex: 1,
+        padding: '0 2.5%',
+      }}
+      className="input-group mb-3"
+    >
       <input
         type="text"
         className="form-control"

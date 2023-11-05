@@ -2,6 +2,7 @@ export const recipeData = [
   {
     id: '1',
     name: 'Pilaf',
+    category: 'Beef',
     imageUrl: '/images/plovas.jpg',
     ingredients: [
       '500 g Beef',
@@ -36,6 +37,7 @@ export const recipeData = [
   {
     id: '2',
     name: 'Chicken Noodles',
+    category: 'Chicken',
     imageUrl: '/images/stir-fry.jpg',
     ingredients: [
       '200 g noodles',
@@ -68,6 +70,7 @@ export const recipeData = [
   {
     id: '3',
     name: 'Creamy Lemon White Fish',
+    category: 'Fish',
     imageUrl: '/images/creamyFish.webp',
     ingredients: [
       '2 tea spoons butter',
@@ -90,6 +93,7 @@ export const recipeData = [
   {
     id: '4',
     name: 'Pulled Chicken Quesadilla',
+    category: 'Chicken',
     imageUrl: '/images/quesadilla.jpg',
     ingredients: [
       '2 chicken breasts',
@@ -117,6 +121,7 @@ export const recipeData = [
   {
     id: '5',
     name: 'Mashed Pumpkin Soup',
+    category: 'Soup',
     imageUrl: '/images/pumpkinSoup.webp',
     ingredients: [
       '1 pumpkin',
@@ -141,6 +146,7 @@ export const recipeData = [
   {
     id: '6',
     name: 'Creamy Chicken Breast In Spinach Parmesan Sauce',
+    category: 'Chicken',
     imageUrl: '/images/chickenParmesan.jpg',
     ingredients: [
       '2-3 chicken breasts',
@@ -169,6 +175,7 @@ export const recipeData = [
   {
     id: '7',
     name: 'Beef Teryaki',
+    category: 'Beef',
     imageUrl: '/images/beefTeryaki.jpg',
     ingredients: [
       '500 g beef',
@@ -201,6 +208,7 @@ export const recipeData = [
   {
     id: '8',
     name: 'Thai Soup',
+    category: 'Soup',
     imageUrl: '/images/thaiSoup.jpg',
     ingredients: [
       '10-15 shrimps',
@@ -229,6 +237,7 @@ export const recipeData = [
   {
     id: '9',
     name: 'Chicken BBQ Wings',
+    category: 'Chicken',
     imageUrl: '/images/chickenBBQ.jpg',
     ingredients: [
       '10 Chicken Wings',
