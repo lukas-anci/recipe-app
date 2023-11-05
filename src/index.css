@@ -6,17 +6,14 @@
   --font-weight-bold: 700;
 
   --text-color: rgba(255, 255, 255, 0.87);
-  --background-color: rgba(65, 65, 65, 0.478);
+  --background-color: rgba(65, 65, 65, 0.8);
 
   --breakpoint-small: 768px;
   --breakpoint-medium: 1024px;
   --breakpoint-large: 1280px;
 
   --spacing-unit: 16px;
-  --button-background-color: #007bff;
-  --button-text-color: #fff;
-  --link-color: #007bff;
-  --link-hover-color: #0056b3;
+
 }
 
 body {

@@ -14,27 +14,29 @@ const FilterBar: React.FC<FilterBarProps> = ({
   return (
     <div className="category-filters mt-4">
       <div className="btn-group mb-2" role="group" aria-label="Category Filter">
-        <button
-          type="button"
-          className={`btn ${
-            categoryFilter === 'All' ? 'btn-primary' : 'btn-secondary'
-          }`}
-          onClick={() => setCategoryFilter('All')}
-        >
-          All
-        </button>
-        {uniqueCategories.map((category) => (
+        <div className="button-container">
           <button
-            key={category}
             type="button"
             className={`btn ${
-              categoryFilter === category ? 'btn-primary' : 'btn-secondary'
+              categoryFilter === 'All' ? 'btn-primary' : 'btn-secondary'
             }`}
-            onClick={() => setCategoryFilter(category)}
+            onClick={() => setCategoryFilter('All')}
           >
-            {category}
+            All
           </button>
-        ))}
+          {uniqueCategories.map((category) => (
+            <button
+              key={category}
+              type="button"
+              className={`btn ${
+                categoryFilter === category ? 'btn-primary' : 'btn-secondary'
+              }`}
+              onClick={() => setCategoryFilter(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

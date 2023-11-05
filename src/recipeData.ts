@@ -291,4 +291,28 @@ export const recipeData = [
       'Add balsamico creme and olive oil.',
     ],
   },
+  {
+    id: '11',
+    name: 'Chickpea Tuna Salad',
+    category: 'Salad',
+    imageUrl: '/images/chickpeaSalad.jpg',
+    ingredients: [
+      '1 can drained chickpeas',
+      'Celary',
+      '1 red onion',
+      '1 can of tuna',
+    ],
+    sauce: [
+      '2 table spoons mayonaise',
+      '1 table spoon Dijon mustard',
+      '2 table spoons olive oil',
+      '1 squezed lemon juice',
+      'Salt and Pepper',
+    ],
+    instructions: [
+      'Whisk to combine sauce ingredients.',
+      'Add to a bowl chickpeas, chopped onion and celary.',
+      'Add tuna and dressing. Stir to combine.',
+    ],
+  },
 ];
