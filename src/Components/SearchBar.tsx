@@ -13,6 +13,11 @@ function SearchBar({ onSearch }: SearchBarProps) {
     onSearch(value);
   };
 
+  const handleClearSearch = () => {
+    setSearchTerm('');
+    onSearch('');
+  };
+
   return (
     <div
       style={{
@@ -31,6 +36,15 @@ function SearchBar({ onSearch }: SearchBarProps) {
         value={searchTerm}
         onChange={handleInputChange}
       />
+      {searchTerm && (
+        <button
+          className="btn btn-secondary"
+          type="button"
+          onClick={handleClearSearch}
+        >
+          X
+        </button>
+      )}
     </div>
   );
 }
