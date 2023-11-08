@@ -366,4 +366,33 @@ export const recipeData = [
       'Serve with spring onions sesame seeds and ciabatta.',
     ],
   },
+  {
+    id: '14',
+    name: 'Creamy Shrimps Pasta',
+    category: 'Fish',
+    imageUrl: '/images/shrimpPasta.jpg',
+    ingredients: [
+      'Spaghetti to boil',
+      'Shrimps',
+      '250 ml of cream',
+      '1 teaspoon paprika powder',
+      '1 teaspoon garlic powder',
+      'Grated cheese',
+      '1 table spoon philadelphia cream',
+      'Grated lemon zeist',
+      'Salt and Pepper',
+      'Fresh Parsley',
+    ],
+
+    instructions: [
+      'Cook the pasta.',
+      'Preheat the pan with oil',
+      'Add shirmps, season with paprika and garlic and cook for a minute from each side.',
+      'Remove the shrimps from the pan.',
+      'In the same pan add cream, cheese and a half a cup of boiled pasta water.',
+      'Taste it, add salt and pepper if needed',
+      'Add the lemon zeist and the shrimps.',
+      'Serve with fresh parsley.',
+    ],
+  },
 ];
