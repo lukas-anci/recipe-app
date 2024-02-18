@@ -583,4 +583,28 @@ export const recipeData = [
       'Serve with mashed potatoes or rice and greenery.',
     ],
   },
+  {
+    id: '21',
+    name: 'Salmon Pokebowl',
+    category: 'Fish',
+    imageUrl: '/images/pokebowl.jpg',
+    ingredients: [
+      '1 cup of sushi rice',
+      'Handfull of wakame',
+      'Handfull of green peas',
+      'Half a cucumber',
+      '1 avocado',
+      'Surimi | Corn',
+      '200 g raw salmon',
+      '2 tbsp. soy sauce',
+      '1 tbsp. sesame oil',
+    ],
+    sauce: ['2 tbsp. mayonaise', '1 tsp. wasabi'],
+    instructions: [
+      'Boil rice and let it cool off. Meanwhile cut all the ingredients',
+      'Place the rice into a bowl. Add all the ingredients on top of rice',
+      'In a separate bowl mix wasabi with mayonaise, add it to the bowl',
+      'Serve with soy sauce, sesame oil and sesame seeds',
+    ],
+  },
 ];
