@@ -607,4 +607,33 @@ export const recipeData = [
       'Serve with soy sauce, sesame oil and sesame seeds',
     ],
   },
+  {
+    id: '22',
+    name: 'Burrito',
+    category: 'Beef',
+    imageUrl: '/images/burrito.jpg',
+    ingredients: [
+      '100 g of rice',
+      'Oil for frying',
+      '500 g of minced beef',
+      '2 cloves of garlic',
+      '100 g canned black beans',
+      '1 package Taco Seasoning Mix',
+      '3 tbsp. Taco sauce',
+      '150 g of cheddar',
+      '1/4 iceberg lettuce',
+      '2 tomatoes',
+      '8 medium or 6 large tortillas',
+      'Jalapeño seasoning (optional)',
+    ],
+
+    instructions: [
+      'Boil the rice and let it cool while we prepare the other ingredients.',
+      'Prepare the meat filling: heat the oil in a pan, add the minced beef and stir-fry for about 7 minutes until the meat is cooked. Grate the garlic and cook for another minute. Add the beans and the spice mixture, mix and cook for another minute. Add the sauce and mix.',
+      'Grate the cheese, cut the lettuce into strips, and dice the tomatoes.',
+      'Place rice, meat filling, cheese, vegetables in the center of the tortilla and, if desired, add jalapeños.',
+      'We roll: we tightly wrap the filling with the lower part of the tortilla, then we fold the sides and roll it into a tight roll. Wrap each burrito tightly in foil.',
+      'In this step, you can eat the burritos as they are or heat them in the oven at 180 degrees for 15 minutes and eat them hot. Transfer the remaining burritos to the refrigerator or freezer for later use.',
+    ],
+  },
 ];
