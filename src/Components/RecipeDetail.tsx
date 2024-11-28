@@ -75,7 +75,7 @@ const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipeData }) => {
       }}
     >
       <h2>{recipe.name}</h2>
-      <img src={recipe?.imageUrl} alt={recipe.name} />
+      <img src={recipe?.imageUrl} alt={recipe.name} className="fixed-height" />
       <h3 className="mt-4 mb-4">Ingredients:</h3>
       <ul className="list-group text-start">
         {recipe.ingredients.map((ingredient, index) => (
