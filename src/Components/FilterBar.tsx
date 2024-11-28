@@ -28,7 +28,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
             <button
               key={category}
               type="button"
-              className={`btn p-2 ${
+              className={`btn d-flex justify-content-center align-items-center no-wrap-button ${
                 categoryFilter === category ? 'btn-primary' : 'btn-secondary'
               }`}
               onClick={() => setCategoryFilter(category)}
