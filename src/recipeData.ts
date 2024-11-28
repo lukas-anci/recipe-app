@@ -755,7 +755,7 @@ export const recipeData = [
     ],
   },
   {
-    id: '26',
+    id: '27',
     name: 'Sate Chicken',
     category: 'Chicken',
     imageUrl: '/images/satechicken.jpg',
