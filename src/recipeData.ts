@@ -838,7 +838,7 @@ export const recipeData = [
     id: '29',
     name: 'Udon soup',
     category: 'Soup',
-    imageUrl: '/images/udonsoup.jpg',
+    imageUrl: '/images/udonsoup.webp',
     ingredients: [
       '----Udon:----',
       '4 green onions, white and light green parts kept separate',
