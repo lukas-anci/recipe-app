@@ -901,14 +901,14 @@ export const recipeData = [
     ],
 
     instructions: [
-      '1. Slice the onions into half moons. Warm a splash of olive oil in a pan on a medium high heat + melt in 2 tbsp butter. Allow to foam + brown, stirring regularly (2-3 mins).',
-      '2. Add the onions + a large pinch of salt. Cook on a medium heat, stirring regularly + adding a splash of water if sticking, until golden, softened + caramelised (at least 20 mins).',
-      '3. Cut the chicken in slices, mix with italian spices and cook it on a separate pan.',
-      '4. Mince the garlic + finely chop the sundried tomatoes. Once the onions have begun to caramelise (20 mins), add the garlic + tomatoes. Stir to combine + sauté for a further minute or two. Season with black pepper.',
-      '5. Get your pasta onto boil in salted water.',
-      '6. Add chicken + Pour in the cream. Stir well to combine.',
-      '7. Once your pasta is al dente, drain (reserving some pasta water) + add to the sauce with a ladle of pasta water. Stir + toss well to create a thick, glossy sauce.',
-      '8. Finely chop the parsley + add half to the pasta, mixing well. 8. Season to taste + serve into bowls. Finish with a drizzle of chilli oil + parsley/chives - enjoy!',
+      'Slice the onions into half moons. Warm a splash of olive oil in a pan on a medium high heat + melt in 2 tbsp butter. Allow to foam + brown, stirring regularly (2-3 mins).',
+      'Add the onions + a large pinch of salt. Cook on a medium heat, stirring regularly + adding a splash of water if sticking, until golden, softened + caramelised (at least 20 mins).',
+      'Cut the chicken in slices, mix with italian spices and cook it on a separate pan.',
+      'Mince the garlic + finely chop the sundried tomatoes. Once the onions have begun to caramelise (20 mins), add the garlic + tomatoes. Stir to combine + sauté for a further minute or two. Season with black pepper.',
+      'Get your pasta onto boil in salted water.',
+      'Add chicken + Pour in the cream. Stir well to combine.',
+      'Once your pasta is al dente, drain (reserving some pasta water) + add to the sauce with a ladle of pasta water. Stir + toss well to create a thick, glossy sauce.',
+      'Finely chop the parsley + add half to the pasta, mixing well. 8. Season to taste + serve into bowls. Finish with a drizzle of chilli oil + parsley/chives - enjoy!',
     ],
   },
 ];
