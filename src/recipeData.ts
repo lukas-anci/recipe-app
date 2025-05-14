@@ -954,7 +954,7 @@ export const recipeData = [
   {
     id: '32',
     name: 'Beef Tacos',
-    category: 'Chicken',
+    category: 'Beef',
     imageUrl: '/images/beefTaco.jpg',
     ingredients: [
       'Oil to cook',
