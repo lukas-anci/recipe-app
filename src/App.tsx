@@ -28,9 +28,11 @@ function App() {
     ...new Set(recipeData.map((recipe) => recipe.category)),
   ];
 
-  const filteredResults = searchResults.filter(
-    (recipe) => categoryFilter === 'All' || recipe.category === categoryFilter
-  );
+  const filteredResults = searchResults
+    .filter(
+      (recipe) => categoryFilter === 'All' || recipe.category === categoryFilter
+    )
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <Router>

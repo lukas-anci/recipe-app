@@ -3,7 +3,7 @@ import { useHistory, useParams } from 'react-router-dom';
 import { Recipe } from '../Interface/IRecipe';
 
 interface RecipeDetailProps {
-  recipeData: Recipe[]; // Replace RecipeData with your actual data structure
+  recipeData: Recipe[];
 }
 
 const RecipeDetail: React.FC<RecipeDetailProps> = ({ recipeData }) => {
